@@ -17,7 +17,7 @@ def authenticate_gspread():
         "token_uri": "https://oauth2.googleapis.com/token",
         "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
         "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/g"
-# Main function to run the app
+
 def main():
     st.title("Mini Data Entry Website")
 
@@ -38,6 +38,5 @@ def main():
         # Add data to Google Sheet
         sheet.append_row([name, email, age])
         st.success("Data submitted successfully!")
-
 if __name__ == "__main__":
     main()
